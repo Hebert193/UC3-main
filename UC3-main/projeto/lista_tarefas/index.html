@@ -1,31 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="styles1.css">
 </head>
-<body>
-    <input type="text">
-    <button>Adicionar</button>
 
-    <ul>
-        <li>Atividade 1
-            <input type="checkbox">
-            <button>Remover</button>
-        </li>
-        <li>Atividade 1
-            <input type="checkbox">
-            <button>Remover</button>
-        </li>
-        <li>Atividade 1
-            <input type="checkbox">
-            <button>Remover</button>
-        </li>
-        <li>Atividade 1
-            <input type="checkbox">
-            <button>Remover</button>
-        </li>
-    </ul>
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <input type="text" placeholder="Digite uma nova tarefa..." id="tarefaInput">
+        <button id="addBtn">Adicionar</button>
+
+        <ul id="listaDeTarefas">
+            <!--Tarefas adicionadas dinamicamente pelo JS-->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
