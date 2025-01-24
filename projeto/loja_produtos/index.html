@@ -1,33 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Loja de Produtos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <h1>Produtos</h1>
 
+    <!--Produtos em Cards-->
     <div class="container">
-        <div class="card selecionado">
+        <div class="card" data-preco="40">
             <div>Produto A</div>
             <div>Preço: R$ 40</div>
         </div>
-        <div class="card">
-            <div>Produto A</div>
-            <div>Preço: R$ 40</div>
+        <div class="card" data-preco="60">
+            <div>Produto B</div>
+            <div>Preço: R$ 60</div>
         </div>
-        <div class="card">
-            <div>Produto A</div>
-            <div>Preço: R$ 40</div>
+        <div class="card" data-preco="50">
+            <div>Produto C</div>
+            <div>Preço: R$ 50</div>
         </div>
     </div>
+    <!--Botões de Ação-->
     <div class="botoes">
         <button class="btn-comprar" id="btnComprar">Comprar</button>
         <button class="btn-redefinir" id="btnRedefinir">Redefinir</button>
     </div>
+    <div id="resultado" class="resultado"></div>
+
+    <!--Botão do Whatsapp-->
+    <a href="#" class="whatsapp-sticky" id="whatsappLink" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/whatsapp--v1.png" alt="whatsapp" />
+    </a>
 
     <script src="script.js"></script>
 </body>
+
 </html>
